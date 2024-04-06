@@ -17,6 +17,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,17 +29,19 @@ public class ProductController {
         return ResponseEntity.ok("Product here" + page + size);
     }
 
-    @PostMapping(value = "create", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<?> createProduct(@Valid
-                                           @RequestBody ProductDTO productDTO,
-                                           BindingResult result) {
+    @PostMapping(value = "", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<?> createProduct(@Valid @ModelAttribute ProductDTO productDTO, BindingResult result) {
         try {
             if (result.hasErrors()) {
                 List<String> error = result.getFieldErrors().stream().map(fieldError -> fieldError.getDefaultMessage()).toList();
                 return ResponseEntity.badRequest().body(error);
             }
-            MultipartFile file = productDTO.getFile();
-            if (file != null) {
+            List<MultipartFile> files = productDTO.getFiles();
+            files = files == null ? new ArrayList<MultipartFile>() : files;
+            for (MultipartFile file : files) {
+                if (file.getSize() == 0) {
+                    continue;
+                }
                 if (file.getSize() > 10 * 1024 *1024) {
                     return ResponseEntity.status(HttpStatus.PAYLOAD_TOO_LARGE).body("File is too large");
                 }
@@ -60,7 +63,7 @@ public class ProductController {
         String uniqueFileName = UUID.randomUUID().toString() + "_" + fileName;
         Path uploadDir = Paths.get("uploads");
         if (!Files.exists(uploadDir)) {
-//            Files.createDirectories(uploadDir);
+            Files.createDirectories(uploadDir);
         }
 
         Path destination = Paths.get(uploadDir.toString(), uniqueFileName);

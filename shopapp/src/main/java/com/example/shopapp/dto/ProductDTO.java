@@ -28,6 +28,6 @@ public class ProductDTO {
     @JsonProperty("update_at")
     private Date updateAt;
     @JsonProperty("category_id")
-    private String categoryId;
+    private Long categoryId;
     private List<MultipartFile> files;
 }

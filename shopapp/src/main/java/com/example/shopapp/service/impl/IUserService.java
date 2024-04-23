@@ -1,4 +1,4 @@
 package com.example.shopapp.service.impl;
 
-public class RoleServiceImplement {
+public class IUserService {
 }

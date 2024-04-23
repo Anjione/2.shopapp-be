@@ -1,6 +1,7 @@
 package com.example.shopapp.controller;
 
 import com.example.shopapp.dto.CategoryDTO;
+import com.example.shopapp.entity.Category;
 import com.example.shopapp.service.CategoryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -17,27 +18,37 @@ import java.util.List;
 public class CategoryController {
 
     private final CategoryService categoryService;
-    @GetMapping("")
-    public ResponseEntity<String> getAllCategory(@RequestParam Long page, @RequestParam Long size) {
-        return ResponseEntity.ok("hello" + page + size);
+
+    @GetMapping("getCategory/{id}")
+    public ResponseEntity<Category> getCategory(@PathVariable Long id) {
+        return ResponseEntity.ok(categoryService.getCategoryById(id));
+    }
+    @GetMapping("getAllCategory")
+    public ResponseEntity<List<Category>> getAllCategory(@RequestParam int page, @RequestParam int size) {
+        List<Category> categoryList = categoryService.getAllCategories(page, size);
+        return ResponseEntity.ok(categoryList);
     }
 
-    @PostMapping("")
+    @PostMapping("createCategory")
     public ResponseEntity<?> createCategory(@Valid @RequestBody CategoryDTO categoryDTO, BindingResult result) {
         if (result.hasErrors()) {
             List<String> error = result.getFieldErrors().stream().map(fieldError -> fieldError.getDefaultMessage()).toList();
             return ResponseEntity.badRequest().body(error);
         }
-        return ResponseEntity.ok("hello" + "  " + categoryDTO.getName());
+        return ResponseEntity.ok(categoryService.createCategory(categoryDTO));
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<String> updateCategory(@PathVariable Long id) {
-        return ResponseEntity.ok("hello update");
+    @PutMapping("updateCategory/{id}")
+    public ResponseEntity<?> updateCategory(@PathVariable Long id, @Valid @RequestBody CategoryDTO categoryDTO, BindingResult result) {
+        if (result.hasErrors()) {
+            List<String> error = result.getFieldErrors().stream().map(fieldError -> fieldError.getDefaultMessage()).toList();
+            return ResponseEntity.badRequest().body(error);
+        }
+        return ResponseEntity.ok(categoryService.updateCategory(categoryDTO, id));
     }
 
-    @DeleteMapping("{id}")
-    public ResponseEntity<String> deleteCategory(@PathVariable Long id) {
-        return ResponseEntity.ok("hello de" + id);
+    @DeleteMapping("deleteCategory/{id}")
+    public ResponseEntity<?> deleteCategory(@PathVariable Long id) {
+        return ResponseEntity.ok(categoryService.deleteCategory(id));
     }
 }

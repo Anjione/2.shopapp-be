@@ -1,6 +1,7 @@
 package com.example.shopapp.controller;
 
 import com.example.shopapp.dto.CategoryDTO;
+import com.example.shopapp.entity.BaseResponse;
 import com.example.shopapp.entity.Category;
 import com.example.shopapp.service.CategoryService;
 import jakarta.validation.Valid;
@@ -20,7 +21,7 @@ public class CategoryController {
     private final CategoryService categoryService;
 
     @GetMapping("getCategory/{id}")
-    public ResponseEntity<Category> getCategory(@PathVariable Long id) {
+    public ResponseEntity<BaseResponse<Category>> getCategory(@PathVariable Long id) {
         return ResponseEntity.ok(categoryService.getCategoryById(id));
     }
     @GetMapping("getAllCategory")

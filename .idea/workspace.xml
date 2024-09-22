@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bf6ce3d-e8d2-42b0-a359-ae7984cb86c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/dto/ProductImageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/exception/InvalidParamException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/repository/ProductImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/response/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/response/ProductListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/response/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/entity/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/entity/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/impl/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/impl/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/impl/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopapp/src/main/java/com/example/shopapp/service/impl/IProductService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2kBB6VyL9sS2DSdZ0YQDSCWn47e" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ShopappApplication.executor": "Debug",
+    "Spring Boot.shopapp-be.executor": "Debug",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/An Nguyen/.m2/repository",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shopapp-be" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../Java/2.env/jdk-17.0.12" />
+      <module name="shopapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shopapp.ShopappApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bf6ce3d-e8d2-42b0-a359-ae7984cb86c3" name="Changes" comment="" />
+      <created>1722746915405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722746915405</updated>
+      <workItem from="1722746916321" duration="1832000" />
+      <workItem from="1724513453100" duration="5370000" />
+      <workItem from="1724776802768" duration="1752000" />
+      <workItem from="1725551298702" duration="1212000" />
+      <workItem from="1726669841925" duration="3056000" />
+      <workItem from="1726895388761" duration="1324000" />
+      <workItem from="1726973383355" duration="9704000" />
+      <workItem from="1727004305109" duration="30000" />
+      <workItem from="1727004435803" duration="52000" />
+      <workItem from="1727004516973" duration="2427000" />
+      <workItem from="1727006963090" duration="466000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,7 +1,7 @@
 package com.example.shopapp.service;
 
 import com.example.shopapp.dto.CategoryDTO;
-import com.example.shopapp.entity.BaseResponse;
+import com.example.shopapp.response.BaseResponse;
 import com.example.shopapp.entity.Category;
 
 import java.util.List;

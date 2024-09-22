@@ -1,7 +1,7 @@
 package com.example.shopapp.service.impl;
 
 import com.example.shopapp.dto.CategoryDTO;
-import com.example.shopapp.entity.BaseResponse;
+import com.example.shopapp.response.BaseResponse;
 import com.example.shopapp.entity.Category;
 import com.example.shopapp.repository.CategoryRepository;
 import com.example.shopapp.service.CategoryService;

@@ -1,4 +1,4 @@
-package com.example.shopapp;
+package com.example.shopapp.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

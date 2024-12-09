@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
+
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -28,4 +30,6 @@ public class OrderDTO {
     private String shipping_method;
     @JsonProperty("shipping_address")
     private String shippingAddress;
+    @JsonProperty("shipping_date")
+    private LocalDate shippingDate;
 }
